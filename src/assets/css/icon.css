@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../icons/icomoon.eot?byim1t');
+  src: url('../icons/icomoon.eot?byim1t#iefix') format('embedded-opentype'),
+    url('../icons/icomoon.ttf?byim1t') format('truetype'),
+    url('../icons/icomoon.woff?byim1t') format('woff'),
+    url('../icons/icomoon.svg?byim1t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sl-icon--"],
+[class*=" sl-icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sl-icon--email:before {
+  content: "\e909";
+}
+
+.sl-icon--kubernetes:before {
+  content: "\e908";
+}
+
+.sl-icon--compute:before {
+  content: "\e90a";
+}
+
+.sl-icon--user-manage:before {
+  content: "\e90c";
+}
+
+.sl-icon--hpc:before {
+  content: "\e904";
+}
+
+.sl-icon--storage:before {
+  content: "\e905";
+}
+
+.sl-icon--network:before {
+  content: "\e906";
+}
+
+.sl-icon--multi:before {
+  content: "\e907";
+}
+
+.sl-icon--bare:before {
+  content: "\e90b";
+}
+
+.sl-icon--right-arrow:before {
+  content: "\e902";
+}
+
+.sl-icon--left-arrow:before {
+  content: "\e903";
+}
+
+.sl-icon--login:before {
+  content: "\e900";
+}
+
+.sl-icon--register:before {
+  content: "\e901";
+}

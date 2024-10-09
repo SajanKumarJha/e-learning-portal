@@ -1,0 +1,81 @@
+@import url("./assets/css/globle.css");
+@import url("./assets/css/icon.css");
+@import url("./assets/css/font.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f3f4f6;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #213547;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sl-hero-main::before,
+.sl-calltoaction--main:after,
+.sl-whychooseus--main:after,
+.sl-features--col:after,
+.sl-register--main:before {
+  --mask-offset: 200px;
+  -webkit-mask: linear-gradient(to bottom,
+      transparent,
+      #fff var(--mask-offset) calc(100% - var(--mask-offset)),
+      transparent),
+    linear-gradient(to right,
+      transparent,
+      #fff var(--mask-offset) calc(100% - var(--mask-offset)),
+      transparent);
+  mask: linear-gradient(to bottom,
+      transparent,
+      #fff var(--mask-offset) calc(100% - var(--mask-offset)),
+      transparent),
+    linear-gradient(to right,
+      transparent,
+      #fff var(--mask-offset) calc(100% - var(--mask-offset)),
+      transparent);
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+}
+
+.sl-hero-main-content--title span:nth-child(1) {
+  background: linear-gradient(to right,
+      #005bea 20%,
+      #0a293a 30%,
+      #2300bd 70%,
+      #005bea 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+}
